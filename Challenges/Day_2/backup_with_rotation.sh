@@ -18,7 +18,7 @@ fi
 
 
 source="$(realpath "$1")"
-target="$source/"backups""
+target="$source/backups"
 
 # Create the backups target directory if it doesn't exist
 mkdir -p "$target"
@@ -30,7 +30,7 @@ mkdir "$new_backup"
 
 # Copy all files from the source directory to the backup directory
 # Use rsync to avoid copying the backup directory into itself
-rsync -a --exclude="$backup" "$source"/ "$new_backup"/
+rsync -a --exclude="$backups/" "$source/" "$new_backup"
 
 # Perform rotation to keep only the last 3 backups
 backup_count=$(ls -1 "$target" | wc -l)
