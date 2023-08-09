@@ -9,6 +9,12 @@ The shell scripts are:
 
 ## Steps
 1. Establish key-based ssh authentication between the master and two remote servers. For this, I referred to this video https://www.youtube.com/watch?v=S1a7RmqeZ5E&t=185s
+
+![image](https://github.com/paragpallavsingh/BashBlaze-7-Days-of-Bash-Scripting-Challenge/assets/40052830/4fb3ee0c-d204-4e9a-89c5-1bced1ebedaa)
+
+
+![image](https://github.com/paragpallavsingh/BashBlaze-7-Days-of-Bash-Scripting-Challenge/assets/40052830/d7ee35e8-3c51-4f94-9a83-76c04f69386d)
+
 2. Install docker in the remote servers using the `remote_execute.sh` script
 ![Screenshot 2023-08-06 at 10 57 40 PM](https://github.com/kunal-gohrani/BashBlaze-7-Days-of-Bash-Scripting-Challenge/assets/47574597/5718e1c0-6ee6-4353-bc40-5a087277d2c5)
 
@@ -22,8 +28,11 @@ The shell scripts are:
 6. Write Dockerfile for your application, I used a python flask application for this project.
 ![image](https://github.com/kunal-gohrani/BashBlaze-7-Days-of-Bash-Scripting-Challenge/assets/47574597/01ed09ee-c750-481f-a028-029abd2839bb)
 
-7. Configure nginx-reverse-proxy.conf to redirect requests from port 80 to my container (port 5000)
+8. Configure nginx-reverse-proxy.conf to redirect requests from port 80 to my container (port 5000)
 
-8. Run `main.sh` which uses `remote_execute.sh` and `secure_transfer.sh` scripts to start the deployment to remote servers
+9. Run `main.sh` which uses `remote_execute.sh` and `secure_transfer.sh` scripts to start the deployment to remote servers
+
+![image](https://github.com/paragpallavsingh/BashBlaze-7-Days-of-Bash-Scripting-Challenge/assets/40052830/fd293c01-541f-4d74-b869-b84a836af34d)
+
 
 Feel free to contribute to my project and let's keep learning!
