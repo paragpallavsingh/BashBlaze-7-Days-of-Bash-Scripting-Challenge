@@ -15,8 +15,8 @@ if [[ $# -ne 1 || $1 == "-h" || $1 == "--help" ]];then
 	showHelp
 fi
 
-clients["client1"]="ubuntu@172.31.43.191"
-clients["client2"]="ubuntu@172.31.35.58"
+clients["client1"]="ubuntu@172.31.42.128"
+clients["client2"]="ubuntu@172.31.39.143"
 src=$1
 type="none"
 if [[ -z $src ]];then

@@ -4,8 +4,8 @@
 #It then runs those commands and both the clients
 
 declare -A clients
-clients["client1"]="ubuntu@172.31.43.191"
-clients["client2"]="ubuntu@172.31.35.58"
+clients["client1"]="ubuntu@172.31.42.128"
+clients["client2"]="ubuntu@172.31.39.143"
 
 executeCommand(){
 	for key in ${!clients[@]};do
